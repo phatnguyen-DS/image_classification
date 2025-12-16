@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Backend (API + model runtime)
+fastapi==0.100.0
+uvicorn[standard]==0.23.1
+onnxruntime==1.15.1
+numpy==1.26.0
+Pillow==9.5.0
+opencv-python-headless==4.8.0.74
+
+# Optional / training utilities (not required to run the API)
+torch==2.0.1+cpu
+torchvision==0.15.2+cpu
