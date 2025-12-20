@@ -1,4 +1,0 @@
-# Frontend (Streamlit UI)
-streamlit==1.25.0
-requests==2.31.0
-Pillow==9.5.0

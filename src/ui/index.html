@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermatology AI - Hệ thống Chẩn đoán Bệnh lý Da liễu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-microscope"></i>
+                <span>Skin AI</span>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Trang chủ</a>
+
+                <a href="#diagnosis" class="nav-link">Chẩn đoán</a>
+                <a href="#contact" class="nav-link">Liên hệ</a>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Ứng dụng Chẩn đoán Bệnh lý Da liễu bằng AI</h1>
+                    <p>Nền tảng tiên tiến giúp phát hiện và phân loại các bệnh lý da liễu với độ chính xác cao, hỗ trợ
+                        chuyên gia y tế trong quá trình chẩn đoán.</p>
+                    <a href="#diagnosis" class="btn-primary">Thử ngay</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="diagnosis" class="section">
+            <div class="container">
+                <h2 class="section-title">Chẩn đoán hình ảnh</h2>
+                <div class="diagnosis-grid-container">
+                    <div class="diagnosis-col-left">
+                        <div class="upload-section">
+                            <div class="upload-area" id="uploadArea">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Kéo và thả hình ảnh vào đây</p>
+                                <p>hoặc</p>
+                                <button class="btn-secondary">Chọn tệp</button>
+                                <input type="file" id="fileInput" accept="image/*">
+                            </div>
+                            <div class="preview-container" id="previewContainer" style="display: none;">
+                                <h3>Hình ảnh cần phân tích</h3>
+                                <div class="image-wrapper">
+                                    <img id="previewImage" src="" alt="Preview">
+                                </div>
+                                <div class="button-group">
+                                    <button class="btn-primary" id="analyzeBtn">Phân tích</button>
+                                    <button class="btn-secondary" id="clearBtn">Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="diagnosis-col-right">
+                        <div class="result-section" id="resultSection">
+                            <h3>Kết quả phân tích</h3>
+                            <div class="result-card" id="resultCard">
+                                <!-- Empty State -->
+                                <div class="empty-state" id="emptyState">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <p>Chưa có kết quả phân tích</p>
+                                    <span class="empty-hint">Vui lòng tải lên hình ảnh để xem kết quả chẩn đoán</span>
+                                </div>
+
+                                <!-- Loading State -->
+                                <div class="loading" id="loading" style="display: none;">
+                                    <div class="spinner"></div>
+                                    <p>Đang phân tích hình ảnh...</p>
+                                </div>
+
+                                <!-- Result Content -->
+                                <div class="result-content" id="resultContent" style="display: none;">
+                                    <div class="diagnosis-result" id="diagnosisResult">
+                                        <!-- Kết quả sẽ được chèn vào đây -->
+                                    </div>
+                                    <div class="confidence-meter">
+                                        <span>Độ tin cậy:</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" id="progressFill"></div>
+                                        </div>
+                                        <span id="confidenceValue">0%</span>
+                                    </div>
+                                    <div class="disclaimer">
+                                        <p><i class="fas fa-info-circle"></i> Kết quả này chỉ mang tính chất tham khảo.
+                                            Vui lòng tham khảo ý kiến chuyên gia y tế để có chẩn đoán chính xác.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Liên hệ</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>tanphat6406@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Điện thoại</h3>
+                        <p>+84 333 786 257</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/phat-nguyen-a264722b7/</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Phat Nguyen.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
