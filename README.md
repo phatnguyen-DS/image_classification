@@ -12,6 +12,11 @@
 - 📱 **Giao diện Web Responsive**: Giao diện người dùng hiện đại, thân thiện với mọi thiết bị
 - 🏥 **Hỗ trợ đa ngôn ngữ**: Tên bệnh lý được hiển thị bằng tiếng Việt
 
+## Demo
+
+- **Link Test Deployment**: [https://e2-e-vision-pipeline-onnx.vercel.app/](https://e2-e-vision-pipeline-onnx.vercel.app/)
+- **Video Demo**: [Xem video demo](images/Screen%20Recording%202025-12-20%20203948.mp4)
+
 ## Cấu trúc dự án
 
 ```
